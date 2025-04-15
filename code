@@ -17,28 +17,25 @@ def create_tree():
 
     tree1 = Node("0,0")
     root.add_child(tree1)
-    tree2 = Node("4,1")
-    root.add_child(tree2)
 
     # children of 0,0
     tree1.add_child(Node("1,0"))
     tree1.add_child(Node("2,0"))
     tree1.add_child(Node("3,0"))
     tree1.add_child(Node("4,0"))
-    tree1.add_child(Node("4,1"))
 
-    # children from 4,1
-    tree2.add_child(Node("5,1"))
-    tree2.add_child(Node("3,1"))
+    branch1 = Node("4,1")
+    branch2 = Node("3,2")
+    branch3 = Node("2,1")
+    tree1.children[-1].add_child(branch1)  
+    tree1.children[-1].add_child(branch2)
+    tree1.children[-1].add_child(branch3)  
 
-    # branches from 3,1
-    branch1 = Node("3,2")
-    branch2 = Node("2,1")
-    tree2.children[-1].add_child(branch1)  
-    tree2.children[-1].add_child(branch2)  
+    branch1.add_child(Node("5,1"))
+    branch1.add_child(Node("3,1"))  
 
-    branch1.add_child(Node("4,2"))
-    branch1.add_child(Node("5,2"))
+    branch2.add_child(Node("4,2"))
+    branch2.add_child(Node("5,2"))
 
     return root
 
