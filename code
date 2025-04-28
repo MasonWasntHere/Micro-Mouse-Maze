@@ -40,7 +40,12 @@ def create_tree():
     n15.add_child(n16)
     
     n06 = Node("0,6")
+    n07 = Node("0,7")
+    n17 = Node("1,7")
     
+    n05.add_child(n06)
+    n05.add_child(n07)
+    n05.add_child(n17)
     
     
     
