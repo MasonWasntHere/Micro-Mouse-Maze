@@ -39,9 +39,62 @@ def create_tree():
     n15.add_child(n05)
     n15.add_child(n16)
     
+    n26 = Node("2,6")
+    n16.add_child(n26)
+    
+    n27 = Node("2,7")
+    n36 = Node("3,6")
+    
+    n26.add_child(n27)
+    n26.add_child(n36)
+    
+    n35 = Node("3,5X")
+    n36.add_child(n35)
+    
+    n37 = Node("3,7")
+    n47 = Node("4,7")
+    n57 = Node("5,7")
+    
+    n27.add_child(n37)
+    n27.add_child(n47)
+    n27.add_child(n57)
+    
+    n67 = Node("6,7")
+    n56 = Node("5,6X")
+    
+    n77 = Node("7,7")
+    n76 = Node("7,6")
+    n66 = Node("6,6")
+    
+    n67.add_child(n77)
+    n67.add_child(n76)
+    n67.add_child(n66)
+    
+    n65 = Node("6,5")
+    n66.add_child(n65)
+    
+    n64 = Node("6,4X")
+    n75 = Node("7,5X")
+    n55 = Node("5,5")
+    
+    n65.add_child(n64)
+    n65.add_child(n75)
+    n65.add_child(n55)
+    
+    n45 = Node("4,5")
+    n55.add_child(n45)
+    
+    n44 = Node("4,4")
+    n46 = Node("4,6X")
+    n45.add_child(n46)
+    n45.add_child(n44)
+    
+    n57.add_child(n67)
+    n57.add_child(n56)
+    
     n06 = Node("0,6")
     n07 = Node("0,7")
-    n17 = Node("1,7")
+    n17 = Node("1,7X")
     
     n05.add_child(n06)
     n05.add_child(n07)
@@ -57,15 +110,71 @@ def create_tree():
     n14.add_child(n13)
 
     n23 = Node("2,3")
+    n12 = Node("1,2")
+    
+    n13.add_child(n12)
+    
+    n11 = Node("1,1")
+    n21 = Node("2,1")
+    n31 = Node("3,1")
+    n41 = Node("4,1")
+    
+    n12.add_child(n11)
+    n12.add_child(n21)
+    n12.add_child(n31)
+    n12.add_child(n41)
+    
+    
+    n40 = Node("4,0X")
+    n51 = Node("5,1")
+    
+    n41.add_child(n40)
+    n41.add_child(n51)
+    
+    n50 = Node("5,0")
+    n60 = Node("6,0")
+    n61 = Node("6,1")
+    n62 = Node("6,2")
+    
+    n51.add_child(n50)
+    n51.add_child(n60)
+    n51.add_child(n61)
+    n51.add_child(n62)
+    
+    n63 = Node("6,3")
+    n72 = Node("7,2")
+    
+    n62.add_child(n63)
+    n62.add_child(n72)
+    
+    n64 = Node("6,4")
+    n65 = Node("6,5")
+    
+    n63.add_child(n64)
+    n63.add_child(n65)
+    
+    n55 = Node("5,5")
+    n75 = Node("7,5X")
+    
+    n65.add_child(n55)
+    n65.add_child(n75)
+    
+    n45 = Node("4,5")
+    n55.add_child(n45)
+    
+    n46 = Node("4,6")
+    
+    n45.add_child(n46)
+    n45.add_child(n44)
     
     n13.add_child(n23)
     
     n24 = Node("2,4")
-    n25 = Node("2,5")
+    n25 = Node("2,5X")
     n22 = Node("2,2")
     
     n23.add_child(n24)
-    n23.add_child(n25)
+    n24.add_child(n25)
     n23.add_child(n22)
     
     n32 = Node("3,2")
@@ -86,9 +195,9 @@ def create_tree():
     n62.add_child(n63)
     
     n73 = Node("7,3")
-    n74 = Node("7,4")
+    n74 = Node("7,4X")
     n71 = Node("7,1")
-    n70 = Node("7,0")
+    n70 = Node("7,0X")
     
     n72.add_child(n73)
     n72.add_child(n74)
@@ -106,7 +215,6 @@ def create_tree():
     n45 = Node("4,5")
     n55.add_child(n45)
 
-    n44 = Node("4,4")
     n45.add_child(n44)
 
     return root
