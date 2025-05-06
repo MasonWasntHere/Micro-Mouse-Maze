@@ -237,7 +237,7 @@ def create_tree():
     return root
 
 def print_tree(node, level=0):
-    print("  " * level + f"- {node.value}")
+    print("--" * level + f"- {node.value}")
     for child in node.children:
         print_tree(child, level + 1)
 
